@@ -236,14 +236,14 @@
 
         } else {
             alert("Login realizado com sucesso!");
-            window.location.href = 'telainicial.html';
+            window.location.href = 'dashboard.html';
         }
     };
 
     window.onload = function () {
         google.accounts.id.initialize({
             client_id: "SEU_ID.apps.googleusercontent.com", 
-            callback: (res) => { alert("Login Google bem-sucedido!"); window.location.href = 'telainicial.html'; }
+            callback: (res) => { alert("Login Google bem-sucedido!"); window.location.href = 'dashboard.html'; }
         });
         google.accounts.id.renderButton(document.getElementById("googleBtn"), { theme: "outline", size: "large", width: "350" });
     };
@@ -284,7 +284,7 @@ document.getElementById('form-login').onsubmit = function(e) {
 
         alert("Login realizado com sucesso!");
 
-        window.location.href = "telainicial.html";
+        window.location.href = "dashboard.html";
 
     }
 };
